@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,8 +15,11 @@ export default function Home() {
             </h1>
           </div>
 
+
           <div id="hero" className="rounded">
+
             <div className="text-container">
+
               <h2>
                 <svg
                   fill="none"
@@ -46,6 +50,8 @@ export default function Home() {
                   sadf
                 </li>
               </ul>
+              <Link href="/weather.csv" download>Download</Link>
+
             </div>
             <div className="logo-container">
               <svg
@@ -93,6 +99,7 @@ export default function Home() {
                   sadf
                 </li>
               </ul>
+              <Link href="/Wed Jul 12 2023 22:24:45 GMT+0545 (Nepal Time).csv" download>Download</Link>
             </div>
             <div className="logo-container">
               <svg

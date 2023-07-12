@@ -2,8 +2,11 @@ import { prop } from "@typegoose/typegoose";
 
 export class Weather {
   @prop()
-  title!: string;
+  humidity!: string;
 
   @prop()
-  description!: string;
+  pressure!: string;
+
+  @prop()
+  temperature!: string;
 }
